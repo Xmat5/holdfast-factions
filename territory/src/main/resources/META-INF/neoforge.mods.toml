@@ -1,0 +1,47 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "MPL-2.0 (faction core) and GPL-3.0-only (Territory Table)"
+
+[[mods]]
+modId = "${mod_id}"
+version = "${mod_version}"
+displayName = "${mod_name}"
+authors = "${mod_authors}"
+description = '''${mod_description}'''
+displayURL = "https://github.com/leon-o/MineTerritory"
+displayTest = "IGNORE_ALL_VERSION"
+
+[[dependencies.holdfast_factions]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.holdfast_factions]]
+modId = "minecraft"
+type = "required"
+versionRange = "${minecraft_version_range}"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.holdfast_factions]]
+modId = "numismatics"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.holdfast_factions]]
+modId = "jakesworldguard"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.holdfast_factions]]
+modId = "minecolonytax"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
